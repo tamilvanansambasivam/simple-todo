@@ -1,6 +1,9 @@
 const express = require("express");
 const dotenv = require("dotenv");
+const mongoose = require("mongoose");
 dotenv.config();
+require("./src/config/db");
+
 const app = express();
 
 app.get("/", (req, res) => {
