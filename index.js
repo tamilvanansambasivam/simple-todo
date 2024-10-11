@@ -6,6 +6,7 @@ require("./src/config/db");
 const Todo = require("./src/models/todo");
 
 const app = express();
+app.use(express.json());
 
 app.get("/", (req, res) => {
   res.send("simple todo app");
